@@ -13,6 +13,15 @@ This library Implements a WPF/MVVM Control libray (with backend) that manages a 
 - Pinned entries can be moved up and down in the list
 - List entries can be removed based on their age (e.g. Remove all entries older than 1 week)
 - Support for Light/Dark theming is build in
+- Entries in a ListView (or other constrained size view) can be trimmed using Ellipses '...' characters at the Left, Right, or Center of the text string
+
+![](https://raw.githubusercontent.com/Dirkster99/Docu/master/MruLib/ShowLeftEllipses.png)![](https://raw.githubusercontent.com/Dirkster99/Docu/master/MruLib/ShowCenterEllipses.png)
+
+See `ShowEllipses` dependency property of the:
+- [PathTrimmingFileHyperlink](https://github.com/Dirkster99/MRULib/blob/master/source/MRULib/Controls/PathTrimmingFileHyperlink.xaml.cs)
+- [PathTrimmingTextBlock](https://github.com/Dirkster99/MRULib/blob/master/source/MRULib/Controls/PathTrimmingTextBlock.cs)
+
+for more details.
 
 There is a demo application and unit test project to demonstrate usage of the control
 and document each feature, such as, the ability to configure a minimum and maximum value
@@ -43,6 +52,10 @@ to also theme standard elements, such as, button and textblock etc.
 
 This library is the third attempt on the subject. See Codeplex to find the last version of this library:
 http://mrulist.codeplex.com/.
+
+Sample Applications:
+- [Edi](https://github.com/Dirkster99/Edi) (see screeenshots below)
+- [XmlExplorer](https://github.com/Dirkster99/XmlExplorer)
 
 ![screenshot](https://github.com/Dirkster99/Docu/blob/master/Edi/StartPage.png?raw=true)
 ![screenshot](https://github.com/Dirkster99/Docu/blob/master/Edi/MU_MenuItems.png?raw=true)
